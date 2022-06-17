@@ -5,15 +5,12 @@ import { Contacto } from "./Contacto";
 function ComponenteB({ contacto }) {
   return (
     <div>
-      <h2> Nombre : {contacto.name} </h2>
+      <h2> Nombre : {contacto.nombre} </h2>
       <h3> Apellido : {contacto.apellido} </h3>
       <h4> Email : {contacto.email} </h4>
       <h5>
-        {" "}
-        Conectado:{" "}
-        {contacto.conectado
-          ? "Contacto en linea"
-          : "Contacto No disponible"}{" "}
+        Conectado:
+        {contacto.conectado ? "Contacto en linea" : "Contacto No disponible"}
       </h5>
     </div>
   );
